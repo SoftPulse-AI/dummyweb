@@ -1,9 +1,9 @@
-  =>  Template Name    : Electra - Electrical Website Template
+  =>  Template Name    : cepl - Electrical Website Template
 
-  =>  Template Link    : https://htmlcodex.com/electrical-website-template
+  =>  Template Link    : https://www.softpulseai.in//electrical-website-template
 
-  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+  =>  Template License : https://www.softpulseai.in//license (or read the LICENSE.txt file)
 
-  =>  Template Author  : HTML Codex
+  =>  Template Author  : SoftPulseAI Technologies
 
-  =>  Author Website   : https://htmlcodex.com
+  =>  Author Website   : https://www.softpulseai.in/
