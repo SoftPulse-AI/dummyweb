@@ -120,7 +120,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: var(--bs-dark);
+    background: var(--bs-white);
     z-index: 1;
 }
 
@@ -360,7 +360,7 @@
         height: 600px;
         top: -200px;
         right: 18px;
-        background: var(--bs-dark);
+        background: var(--bs-white);
         transform: rotate(-18deg);
         z-index: -1;
     }
