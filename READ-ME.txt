@@ -1,9 +1,0 @@
-  =>  Template Name    : cepl - Electrical Website Template
-
-  =>  Template Link    : https://www.softpulseai.in//electrical-website-template
-
-  =>  Template License : https://www.softpulseai.in//license (or read the LICENSE.txt file)
-
-  =>  Template Author  : SoftPulseAI Technologies
-
-  =>  Author Website   : https://www.softpulseai.in/
