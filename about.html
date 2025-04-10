@@ -157,7 +157,7 @@
                             <h4 class="text-primary">About Us</h4>
                             <h1 class="display-4 mb-4">Providing you with the highest quality of Work</h1>
                          
-                            <p class="mb-4">ComoPower Engineers Private Limited (CEPL), India’s premier Power Sector Consultant. Since our establishment in 2017, our primary goal has been to contribute to the growth and development of the Power Sector by providing comprehensive and fully integrated consultancy services. With our site offices already established in five states across the country and ongoing expansion plans, CEPL has emerged as a leader in the consulting space within the power sector.
+                            <p class="mb-4">Comopower Engineers Private Limited (CEPL), India’s premier Power Sector Consultant. Since our establishment in 2017, our primary goal has been to contribute to the growth and development of the Power Sector by providing comprehensive and fully integrated consultancy services. With our site offices already established in five states across the country and ongoing expansion plans, CEPL has emerged as a leader in the consulting space within the power sector.
                             </p>
                             <div class="text-dark mb-4">
                                 <p class="fs-5"><span class="fa fa-check text-primary me-2"></span>Policy & Regulatory Advisory</p>
@@ -311,7 +311,7 @@
                         <h1 class="display-4 mb-4">Common Frequently Asked Questions?</h1>
                         <p class="mb-4">Here are some of the most common questions we receive atComopower Engineers Private Limited (CEPL). If you have any other queries, feel free to reach out to us directly.
                         </p>
-                        <a class="btn btn-primary py-3 px-5" href="#">Have Any Questions</a>
+                        <button class="btn btn-primary py-3 px-5" data-bs-toggle="modal" data-bs-target="#queryModal">Have Any Questions</button>
                     </div>
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
                         <div class="h-100">
@@ -371,6 +371,66 @@
                 </div>
             </div>
          </div>
+         <style>
+            /* Add this in your <head> or stylesheet */
+            .modal-content {
+              border-radius: 1rem;
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+          
+            .form-control {
+              border-radius: 0.75rem;
+              transition: box-shadow 0.3s ease;
+            }
+          
+            .form-control:focus {
+              box-shadow: 0 0 8px rgba(13, 110, 253, 0.4);
+              border-color: #86b7fe;
+            }
+          
+            .btn {
+              border-radius: 0.75rem;
+            }
+          
+            .modal-header {
+              border-top-left-radius: 1rem;
+              border-top-right-radius: 1rem;
+            }
+          
+            .modal-footer {
+              border-bottom-left-radius: 1rem;
+              border-bottom-right-radius: 1rem;
+            }
+          </style>
+          
+          <!-- Your Modal -->
+          <div class="modal fade" id="queryModal" tabindex="-1" aria-labelledby="queryModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                  <h5 class="modal-title" id="queryModalLabel">Submit Your Question</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="send_mail.php" method="POST">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <input type="tel" name="phone" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="query" class="form-label">Your Query</label>
+                      <textarea name="query" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         <!-- FAQ End -->
 
 
@@ -481,7 +541,7 @@
                         <div class="footer-item d-flex flex-column">
                             <div class="footer-item">
                                 <h3 class="text-white mb-4"><i class="fas fa-bolt text-primary me-3"></i>CEPL</h3>
-                                <p class="mb-3">ComoPower Engineers Private Limited (CEPL) is India’s leading Power Sector Consultant, established in 2017. With site offices in five states and a team of 300+ engineers, we provide end-to-end consultancy services across power, infrastructure, water, roads, rail, and more.</p>
+                                <p class="mb-3">Comopower Engineers Private Limited (CEPL) is India’s leading Power Sector Consultant, established in 2017. With site offices in five states and a team of 300+ engineers, we provide end-to-end consultancy services across power, infrastructure, water, roads, rail, and more.</p>
                             </div>
                         </div>
                     </div>
