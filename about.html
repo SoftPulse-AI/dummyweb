@@ -300,7 +300,27 @@
             </div>
         </div>
         <!-- Projects End -->
+        <div class="container-fluid banner py-5 wow zoomIn" data-wow-delay="0.2s" style="margin-bottom: 35px;">
+            <div class="banner-design-1"></div>
+            <div class="banner-design-2"></div>
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-8">
+                        <div class="">
+                            <h4 class="text-white">Join Our Team</h4>
+                            <h1 class="display-4 text-white mb-0">Be a part of our team and let's innovate together for a brighter future</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center justify-content-lg-end h-100">
+                            <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#" data-bs-toggle="modal" data-bs-target="#resumeModal">ENROLL NOW</a>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
         <!-- FAQ Start -->
         <div class="container-fluid faq-section bg-light pb-5">
@@ -432,7 +452,76 @@
             </div>
           </div>
         <!-- FAQ End -->
-
+        <style>
+            /* Add this in your <head> or stylesheet */
+            .modal-content {
+                border-radius: 1rem;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+        
+            .form-control {
+                border-radius: 0.75rem;
+                transition: box-shadow 0.3s ease;
+            }
+        
+            .form-control:focus {
+                box-shadow: 0 0 8px rgba(13, 110, 253, 0.4);
+                border-color: #86b7fe;
+            }
+        
+            .btn {
+                border-radius: 0.75rem;
+            }
+        
+            .modal-header {
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+            }
+        
+            .modal-footer {
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+            }
+        </style>
+        
+        <!-- Your Modal for Resume Upload -->
+        <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="resumeModalLabel">Upload Your Resume</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="upload_resume.php" method="POST" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" name="name" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" name="phone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="qualification" class="form-label">Highest Qualification</label>
+                                <input type="text" name="qualification" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="resume" class="form-label">Upload Resume</label>
+                                <input type="file" name="resume" class="form-control" accept=".pdf,.doc,.docx" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
 
         <!-- Team Start -->
          <!-- <div class="container-fluid team py-5">
