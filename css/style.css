@@ -126,7 +126,7 @@
 }
 
 @media (min-width: 992px) {
-    .header-top::before {
+    /* .header-top::before {
         content: "";
         position: absolute;
         overflow: hidden;
@@ -136,11 +136,11 @@
         right: 0;
         background: var(--bs-dark);
         z-index: -1;
-    }
+    } */
 
-    .navbar-brand-2 {
+    /* .navbar-brand-2 {
         display: none;
-    }
+    } */
 }
 
 @media (max-width: 991px) {
@@ -156,9 +156,9 @@
         max-height: 80px;
     }
 
-    .navbar-brand {
+    /* .navbar-brand {
         display: none;
-    }
+    } */
 
     .navbar-brand-2 {
         position: relative;
