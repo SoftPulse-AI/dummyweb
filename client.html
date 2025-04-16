@@ -74,28 +74,19 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.client-card {
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 200px; /* Fixed width for square */
-    height: 200px; /* Fixed height for square */
-    margin: 0 auto; /* Center the cards */
-}
+
 
 .client-card img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
 
     border-radius: 10px;
-    transition: transform 0.5s ease;
+
 }
 
 .client-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    
 }
 
 .client-card:hover img {
@@ -107,7 +98,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjusted to make space for 200px cards */
     gap: 20px;
-    padding: 30px;
 }
 
 /* Ensure the heading is centered and has space between sections */
@@ -133,118 +123,77 @@ body {
     </style>
   </head>
   <body>
-    <div class="container-fluid header-top">
-      <div class="container d-flex align-items-center">
-        <div class="d-flex align-items-center h-100">
-          <a href="#" class="navbar-brand" style="height: 125px">
-            <!-- <h1 class="text-primary mb-0"><i class="fas fa-bolt"></i> CEPL</h1> -->
-            <img
-              src="img/logo.png"
-              alt="Logo"
-              style="height: 60px; width: auto"
-            />
-          </a>
-        </div>
-        <div class="w-100 h-100">
-          <div class="topbar px-0 py-2 d-none d-lg-block" style="height: 45px">
-            <div class="row gx-0 align-items-center">
-              <div class="col-lg-8 text-center text-lg-center mb-lg-0">
-                <div class="d-flex flex-wrap">
-                  <div class="border-end border-primary pe-3">
-                    <a href="#" class="text-muted small"
-                      ><i class="fas fa-map-marker-alt text-primary me-2"></i
-                      >Find A Location</a
-                    >
-                  </div>
-                  <div class="ps-3">
-                    <a href="mailto:info@comopower.com" class="text-muted small"
-                      ><i class="fas fa-envelope text-primary me-2"></i
-                      >info@comopower.com</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-flex justify-content-end">
-                  <div class="d-flex border-end border-primary pe-3">
-                    <a class="btn p-0 text-primary me-3" href="#"
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-                    <a class="btn p-0 text-primary me-3" href="#"
-                      ><i class="fab fa-twitter"></i
-                    ></a>
-                    <a class="btn p-0 text-primary me-3" href="#"
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                    <a class="btn p-0 text-primary me-0" href="#"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </div>
-                  <div class="dropdown ms-3">
-                    <a
-                      href="#"
-                      class="dropdown-toggle text-white"
-                      data-bs-toggle="dropdown"
-                      ><small class="text-body"
-                        ><i class="fas fa-globe-europe text-primary me-2"></i>
-                        English</small
-                      ></a
-                    >
-                    <div class="dropdown-menu">
-                      <a href="#" class="dropdown-item">English</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-bar px-0 py-lg-0" style="height: 80px">
-            <nav
-              class="navbar navbar-expand-lg navbar-light d-flex justify-content-lg-end"
-            >
-              <a href="#" class="navbar-brand-2">
-                <h1 class="text-primary mb-0">
-                  <i class="fas fa-bolt"></i>Comopower Engineers Private
-                  Limited
-                </h1>
-                <!-- <img src="img/logo.png" alt="Logo"> -->
+    <div class="container-fluid">
+      <div class="container d-flex align-items-center flex justify-content-between" style="width: 100%;">
+          <img src="img/logo.png" alt="Logo" style="height: 60px; width: auto;">
+          <!-- <div class="d-flex align-items-center h-100">
+              <a href="#" class="navbar-brand">
+              <img src="img/logo.png" alt="Logo" style="height: 60px; width: auto;">
+
               </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse"
-              >
-                <span class="fa fa-bars"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-0 mx-lg-auto bg-white">
-                  <a href="index.html" class="nav-item nav-link">Home</a>
-                  <a href="about.html" class="nav-item nav-link">About</a>
-                  <a href="service.html" class="nav-item nav-link">Service</a>
-                  <a href="client.html" class="nav-item nav-link active"
-                    >Client</a
-                  >
-
-                  <a href="contact.html" class="nav-item nav-link">Contact</a>
-                  <div class="nav-btn ps-3">
-                    <!-- <button class="btn-search btn btn-primary btn-md-square mt-2 mt-lg-0 mb-4 mb-lg-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
-                    <a
-                      href="about.html"
-                      class="btn btn-primary py-2 px-4 ms-0 ms-lg-3"
-                    >
-                      Get Solution</a
-                    >
-                    <a href="about.html#join-team-banner" class="btn btn-primary py-2 px-4 ms-0 ms-lg-3"> Apply to Join Our Team</a>
-
+          </div> -->
+          <div class="">
+              <!-- <div class="topbar px-0 py-2 d-none d-lg-block" style="height: 45px;">
+                  <div class="row gx-0 align-items-center">
+                      <div class="col-lg-8 text-center text-lg-center mb-lg-0">
+                          <div class="d-flex flex-wrap">
+                              <div class="border-end border-primary pe-3">
+                                  <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                              </div>
+                              <div class="ps-3">
+                                  <a href="mailto:info@comopower.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>info@comopower.com</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 text-center text-lg-end">
+                          <div class="d-flex justify-content-end">
+                              <div class="d-flex border-end border-primary pe-3">
+                                  <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                  <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                  <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
+                                  <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                              </div>
+                              <div class="dropdown ms-3">
+                                  <a href="#" class="dropdown-toggle text-white" data-bs-toggle="dropdown"><small class="text-body"><i class="fas fa-globe-europe text-primary me-2"></i> English</small></a>
+                                  <div class="dropdown-menu">
+                                      <a href="#" class="dropdown-item">English</a>
+                                     
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
+              </div> -->
+              <div class="nav-bar px-0 py-lg-0" style="height: 80px;">
+                  <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-lg-end">
+                      <!-- <a href="#" class="navbar-brand-2">
+                          <h1 class="text-primary mb-0"><i class="fas fa-bolt"></i>Comopower Engineers Private Limited</h1>
+                      </a>   -->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                          <span class="fa fa-bars"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarCollapse">
+                          <div class="navbar-nav mx-0 mx-lg-auto bg-white">
+                              <a href="index.html" class="nav-item nav-link ">Home</a>
+                              <a href="about.html" class="nav-item nav-link">About</a>
+                              <a href="service.html" class="nav-item nav-link">Service</a>
+                            
+                              <a href="client.html" class="nav-item nav-link active">Client</a>
+                              <a href="contact.html" class="nav-item nav-link">Contact</a>
+                              <div class="nav-btn ps-3">
+                                  <!-- <button class="btn-search btn btn-primary btn-md-square mt-2 mt-lg-0 mb-4 mb-lg-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
+                                  <a href="about.html" class="btn btn-primary py-2 px-4 ms-0 ms-lg-3"> Get Solution</a>
+                                  <a href="about.html#join-team-banner" class="btn btn-primary py-2 px-4 ms-0 ms-lg-3 mt-3 mt-lg-0">
+                                    Join Our Team
+                                </a>
+                              </div>
+                          </div>
+                      </div>
+                  </nav>
               </div>
-            </nav>
           </div>
-        </div>
       </div>
-    </div>
+  </div>
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb">
         <div class="container text-center py-5" style="max-width: 900px;">
@@ -306,8 +255,14 @@ body {
         <div class="client-card" >
           <img src="img/client10.webp" alt="Client" />
         </div>
-        <div class="client-card"><img src="img/client11.webp" alt="Client"></div>
+        <div class="client-card"><img src="img/client16.jpg" alt="Client"></div>
         <div class="client-card"><img src="img/client12.webp" alt="Client"></div>
+        <div class="client-card">
+          <img src="img/client15.jpg" alt="Client 8" />
+        </div>
+        <div class="client-card">
+          <img src="img/client14.jpg" alt="Client 8" />
+        </div>
       </div>
     </div>
 
