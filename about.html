@@ -102,7 +102,7 @@
                                     <div class="nav-btn ps-3">
                                         <!-- <button class="btn-search btn btn-primary btn-md-square mt-2 mt-lg-0 mb-4 mb-lg-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
                                         <a href="about.html" class="btn btn-primary py-2 px-4 ms-0 ms-lg-3"> Get Solution</a>
-                                        <a href="about.html#join-team-banner" class="btn btn-primary py-2 px-4 ms-0 ms-lg-3 mt-3 mt-lg-0">
+                                        <a  href="#" data-bs-toggle="modal" data-bs-target="#resumeModal" class="btn btn-primary py-2 px-4 ms-0 ms-lg-3 mt-3 mt-lg-0">
                                             Join Our Team
                                         </a>
                                     </div>
@@ -220,7 +220,7 @@
                 <div class="row g-5">
                     <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
                         <div>
-                            <h4 class="text-primary">Our Projects</h4>
+                     
                             <h1 class="display-4 mb-4">CEPL is Known for……</h1>
                             <p class="mb-5">By focusing on better reach, higher accuracy, trusted advisory services, indepth knowledge, and customized surveys, CEPL aims to continuously raise the bar in the power sector consultancy space and contribute significantly to the growth and development of the industry</p>
                             <ul class="nav">
@@ -523,7 +523,41 @@
         </div>
         
         
-
+        <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="resumeModalLabel">Upload Your Resume</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="upload_resume.php" method="POST" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" name="name" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" name="phone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="qualification" class="form-label">Highest Qualification</label>
+                                <input type="text" name="qualification" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="resume" class="form-label">Upload Resume</label>
+                                <input type="file" name="resume" class="form-control" accept=".pdf,.doc,.docx" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Team Start -->
          <!-- <div class="container-fluid team py-5">
             <div class="container py-5">

@@ -117,7 +117,7 @@
                                     <div class="nav-btn ps-3">
                                         <!-- <button class="btn-search btn btn-primary btn-md-square mt-2 mt-lg-0 mb-4 mb-lg-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
                                         <a href="about.html" class="btn btn-primary py-2 px-4 ms-0 ms-lg-3"> Get Solution</a>
-                                        <a href="about.html#join-team-banner" class="btn btn-primary py-2 px-4 ms-0 ms-lg-3 mt-3 mt-lg-0">
+                                        <a  href="#" data-bs-toggle="modal" data-bs-target="#resumeModal" class="btn btn-primary py-2 px-4 ms-0 ms-lg-3 mt-3 mt-lg-0">
                                             Join Our Team
                                         </a>
                                     </div>
@@ -408,16 +408,51 @@
         });
     });
 </script>
-
+<div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="resumeModalLabel">Upload Your Resume</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="upload_resume.php" method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" name="phone" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="qualification" class="form-label">Highest Qualification</label>
+                        <input type="text" name="qualification" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="resume" class="form-label">Upload Resume</label>
+                        <input type="file" name="resume" class="form-control" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- Container for all the projects -->
-<h2 style="color: rgba(246, 138, 10, .9); margin-left: 15px;">Our Projects</h2>
+<h1 style="color: rgba(246, 138, 10, .9); text-align: center;">Our Projects</h1>
 
 <!-- Container for all the projects -->
-<section id="carousel-container" style="position: relative;  overflow: hidden; margin-left: 20px; margin-right: 20px;">
+<section id="carousel-container" style="position: relative; overflow: hidden; margin-left: 20px; margin-right: 20px;">
     <!-- Cards container -->
     <div id="card-container" style="display: flex; flex-wrap: wrap; gap: 20px; padding-bottom: 20px; width: 100%;">
+  
       <!-- Card 1 -->
       <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #1abc9c;">
         <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">01</div>
@@ -426,81 +461,106 @@
       </div>
   
       <!-- Card 2 -->
-   
+      <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #3498db;">
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">02</div>
+        <div style="font-size: 30px; margin-bottom: 15px;">⚙️</div>
+        <h3 style="font-size: 16px; margin-bottom: 10px;">Project Management Consultancy in Smart City of Uttar Pradesh</h3>
+      </div>
   
       <!-- Card 3 -->
       <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #f39c12;">
-        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">02</div>
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">03</div>
         <div style="font-size: 30px; margin-bottom: 15px;">📊</div>
         <h3 style="font-size: 16px; margin-bottom: 10px;">Project Monitoring Agency for monitoring/supervision and quality control consultancy services under DDUGJY and IPDS in 8 districts for MPPKVCL, Jabalpur</h3>
       </div>
   
       <!-- Card 4 -->
       <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #e74c3c;">
-        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">03</div>
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">04</div>
         <div style="font-size: 30px; margin-bottom: 15px;">🏗️</div>
         <h3 style="font-size: 16px; margin-bottom: 10px;">Preparation of DPR and Project Management Consultancy for shifting of overhead lines to UG Cable in State of Maharashtra under Disaster Management Program</h3>
       </div>
   
       <!-- Card 5 -->
-   
+      <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #9b59b6;">
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">05</div>
+        <div style="font-size: 30px; margin-bottom: 15px;">🔧</div>
+        <h3 style="font-size: 16px; margin-bottom: 10px;">Field Quality Inspection of Village Electrification in Uttar Pradesh</h3>
+      </div>
   
       <!-- Card 6 -->
-     
+      <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #1abc9c;">
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">06</div>
+        <div style="font-size: 30px; margin-bottom: 15px;">✔️</div>
+        <h3 style="font-size: 16px; margin-bottom: 10px;">Quality Audit for Electrification Projects in Uttar Pradesh</h3>
+      </div>
+  
+      <!-- Card 7 -->
+      <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #3498db;">
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">07</div>
+        <div style="font-size: 30px; margin-bottom: 15px;">📦</div>
+        <h3 style="font-size: 16px; margin-bottom: 10px;">Third Party (Pre-Dispatch) Material Inspection</h3>
+      </div>
   
       <!-- Card 8 -->
       <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #f39c12;">
-        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">04</div>
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">08</div>
         <div style="font-size: 30px; margin-bottom: 15px;">🛠️</div>
         <h3 style="font-size: 16px; margin-bottom: 10px;">Work of Third Party Quality Monitoring Agency (TPQMA) in various DISCOMs of India</h3>
       </div>
   
       <!-- Card 9 -->
       <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #e74c3c;">
-        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">05</div>
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">09</div>
         <div style="font-size: 30px; margin-bottom: 15px;">📝</div>
         <h3 style="font-size: 16px; margin-bottom: 10px;">Third Party Independent Evaluation Agency (TPIEA) for Rural Electrification work completed under RGGVY-II (12th Plan), WESCO, Odisha</h3>
       </div>
   
       <!-- Card 10 -->
       <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #9b59b6;">
-        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">06</div>
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">10</div>
         <div style="font-size: 30px; margin-bottom: 15px;">⚡</div>
         <h3 style="font-size: 16px; margin-bottom: 10px;">Preparation of Detailed Project Report (DPR) for Overhead Distribution Infrastructure to Underground Infrastructure in Various cities of U.P. and Maharashtra</h3>
       </div>
   
       <!-- Card 11 -->
       <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #1abc9c;">
-        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">07</div>
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">11</div>
         <div style="font-size: 30px; margin-bottom: 15px;">📑</div>
         <h3 style="font-size: 16px; margin-bottom: 10px;">Preparation of Detailed Project Report (DPR) for creating distribution infrastructure (LT Bare Conductor to LT AB Cable) Under Asian Development Bank (ADB) in villages of U.P.</h3>
       </div>
   
       <!-- Card 12 -->
       <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #3498db;">
-        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">08</div>
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">12</div>
         <div style="font-size: 30px; margin-bottom: 15px;">⚙️</div>
         <h3 style="font-size: 16px; margin-bottom: 10px;">Preparation of detailed project report (DPR) of installed capacitor bank in Dakshinanchal Vidyut Vitran Nigam Ltd, Agra</h3>
       </div>
   
       <!-- Card 13 -->
       <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #e74c3c;">
-        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">09</div>
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">13</div>
         <div style="font-size: 30px; margin-bottom: 15px;">🔨</div>
         <h3 style="font-size: 16px; margin-bottom: 10px;">Third Party Testing Agency (TPTA) for repairing of Transformers at workshop</h3>
       </div>
   
       <!-- Card 14 -->
       <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #f39c12;">
-        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">10</div>
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">14</div>
         <div style="font-size: 30px; margin-bottom: 15px;">⚙️</div>
         <h3 style="font-size: 16px; margin-bottom: 10px;">A Study on Non-Star/Inefficient Distribution Transformer for Replacement to BEE’s 5-Star Distribution Transformer at DISCOMs</h3>
       </div>
   
       <!-- Card 15 -->
+      <div class="card" style="flex-shrink: 0; width: calc(20% - 16px); background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; scroll-snap-align: center; position: relative; display: flex; flex-direction: column; align-items: center; border-left: 5px solid #9b59b6;">
+        <div style="position: absolute; top: 10px; left: 10px; background-color: #ddd; padding: 5px; border-radius: 50%; font-size: 14px;">15</div>
+        <div style="font-size: 30px; margin-bottom: 15px;">📍</div>
+        <h3 style="font-size: 16px; margin-bottom: 10px;">Survey, Investigation and Proposal of Village Infrastructure under RGGVY – 12th Plan, DDVGVY and Saubhagya Scheme in more than 2500 Habitations of Uttar Pradesh and more than 1000 Habitations of Madhya Pradesh</h3>
+      </div>
   
     </div>
   </section>
+  
   
   <style>
     /* Responsive Design */
